@@ -24,13 +24,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* height: 100vh; */
     background: var(--White-Y);
 }
 
 .container {
     display: grid;
-    max-width: 38rem;
     margin: 3rem 0;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, fit-content);
@@ -40,21 +38,15 @@ body {
 .cards {
     display: flex;
     flex-direction: column;
-    max-width: 21rem;
     border-radius: 0.5rem;
+    max-width: 21rem;
     height: fit-content;
     padding: 1rem;
-}
-
-.cards img {
-    /* display: none; */
-    width: 5rem;
 }
 
 .card-1 {
     align-items: center;
     background: var(--Purple-500);
-    /* padding: 1rem; */
 }
 
 .card-1 h3 {
@@ -83,7 +75,6 @@ body {
 
 .card-2 {
     background: var(--White);
-    /* padding: 1rem; */
 
 }
 
@@ -99,7 +90,6 @@ body {
 
 .card-3 {
     background: var(--Yellow-500);
-    /* padding: 1rem; */
 }
 
 .card-3 h3 {
@@ -113,7 +103,6 @@ body {
 .card-4 {
     align-items: center;
     background: var(--Purple-100);
-    /* padding: 1rem; */
 }
 
 .card-4 h3 {
@@ -197,4 +186,80 @@ body {
 
 .card-8 img {
     width: 14rem;
+}
+
+@media screen and (min-width: 64rem ) {
+    body {
+        height: 100vh;
+    }
+    .container {
+        grid-template-columns: repeat(4, 232px);
+        grid-template-rows: repeat(10, 1fr);
+    }
+
+    .cards {
+        max-width: none;
+        height: auto;
+    }
+
+    .cards img {
+        width: 4rem;
+    }
+
+    .card-7 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+
+    .card-1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+
+    .card-4 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 8;
+    }
+
+    .card-8 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 11;
+    }
+
+    .card-2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 8;
+    }
+
+    .card-3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 8;
+    }
+
+    .card-6 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 8;
+        grid-row-end: 11;
+    }
+
+    .card-5 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 8;
+        grid-row-end: 11;
+    }
 }
