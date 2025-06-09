@@ -200,6 +200,8 @@ body {
     .cards {
         max-width: none;
         height: auto;
+        overflow: hidden;
+
     }
 
     .cards img {
@@ -213,6 +215,10 @@ body {
         grid-row-end: 6;
     }
 
+    .card-7 img {
+        width: 12rem;
+    }
+
     .card-1 {
         grid-column-start: 2;
         grid-column-end: 4;
@@ -220,6 +226,9 @@ body {
         grid-row-end: 5;
     }
 
+    .card-1 img {
+        width: 12rem;
+    }
 
     .card-4 {
         grid-column-start: 4;
@@ -228,11 +237,36 @@ body {
         grid-row-end: 8;
     }
 
+    .card-4 h3 {
+        font-size: 1.7rem;
+    }
+
+    .card-4 img {
+        margin-left: 9rem;
+        width: 20rem;
+    }
+
+    .card-4 h4 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: left;
+    }
+    
     .card-8 {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 6;
         grid-row-end: 11;
+    }
+
+    .card-8 h3 {
+        font-size: 2.1rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-8 img {
+        width: 13rem;
     }
 
     .card-2 {
@@ -242,11 +276,26 @@ body {
         grid-row-end: 8;
     }
 
+    .card-2 img {
+        width: 18rem;
+    }
+
     .card-3 {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 5;
         grid-row-end: 8;
+    }
+
+    .card-3 h3 {
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+        width: 12rem;
+    }
+
+    .card-3 img {
+        width: 12rem;
+        translate: 0 50%;
     }
 
     .card-6 {
@@ -256,10 +305,34 @@ body {
         grid-row-end: 11;
     }
 
+    .card-6 h4 {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .card-6 img {
+        width: 12rem;
+    }
+
     .card-5 {
         grid-column-start: 3;
         grid-column-end: 5;
         grid-row-start: 8;
         grid-row-end: 11;
+        flex-direction: row;
     }
+
+    .card-5 img {
+        /* width: 12rem; */
+        /* width: 40%; */
+    }
+
+    .card-5 h3 {
+        font-size: 2.2rem;
+        font-weight: 500;
+        width: 16rem;
+        padding-left: 0.5rem;
+        text-align: left;
+    }
+
 }
