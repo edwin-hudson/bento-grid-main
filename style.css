@@ -151,11 +151,13 @@ body {
 
 .card-6 h1{
     font-size: 3rem;
+    font-weight: 500;
 }
 
 .card-6 h4 {
     font-size: 1.2rem;
     padding: 1rem;
+    font-weight: 500;
 }
 
 .card-6 img{
@@ -169,6 +171,7 @@ body {
 .card-7 h3 {
     font-size: 1.7rem;
     padding: 1rem;
+    font-weight: 500;
 }
 
 .card-7 span {
