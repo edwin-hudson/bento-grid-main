@@ -213,6 +213,7 @@ body {
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 6;
+        justify-content: center;
     }
 
     .card-7 img {
@@ -230,6 +231,8 @@ body {
         width: 12rem;
     }
 
+
+
     .card-4 {
         grid-column-start: 4;
         grid-column-end: 5;
@@ -243,12 +246,12 @@ body {
 
     .card-4 img {
         margin-left: 9rem;
+        /* width: 20rem; */
         width: 20rem;
     }
 
     .card-4 h4 {
         font-size: 1.1rem;
-        font-weight: 500;
         text-align: left;
     }
     
@@ -280,6 +283,12 @@ body {
         width: 18rem;
     }
 
+    .card-2 h3 {
+        font-size: 1.6rem;
+        line-height: 1.5rem;
+        width: 12rem;
+    }
+
     .card-3 {
         grid-column-start: 3;
         grid-column-end: 4;
@@ -288,7 +297,7 @@ body {
     }
 
     .card-3 h3 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         line-height: 1.5rem;
         width: 12rem;
     }
@@ -307,7 +316,6 @@ body {
 
     .card-6 h4 {
         font-size: 0.9rem;
-        font-weight: 500;
     }
 
     .card-6 img {
@@ -329,7 +337,6 @@ body {
 
     .card-5 h3 {
         font-size: 2.2rem;
-        font-weight: 500;
         width: 16rem;
         padding-left: 0.5rem;
         text-align: left;
