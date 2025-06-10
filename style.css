@@ -42,6 +42,7 @@ body {
     max-width: 21rem;
     height: fit-content;
     padding: 1rem;
+
 }
 
 .card-1 {
@@ -59,8 +60,12 @@ body {
 
 }
 
-.card-1 h3 span{
+.card-1 h3 span.ten{
     color: var(--Yellow-500);
+}
+
+.card-1 h3 span.fast{
+    font-style: italic;
 }
 
 .card-1 img{
@@ -201,7 +206,6 @@ body {
         max-width: none;
         height: auto;
         overflow: hidden;
-
     }
 
     .cards img {
@@ -231,7 +235,9 @@ body {
         width: 12rem;
     }
 
-
+    .card-1 h3 {
+        font-weight: 500;
+    }
 
     .card-4 {
         grid-column-start: 4;
@@ -246,12 +252,12 @@ body {
 
     .card-4 img {
         margin-left: 9rem;
-        /* width: 20rem; */
         width: 20rem;
     }
 
     .card-4 h4 {
         font-size: 1.1rem;
+        font-weight: 500;
         text-align: left;
     }
     
@@ -264,6 +270,7 @@ body {
 
     .card-8 h3 {
         font-size: 2.1rem;
+        font-weight: 500;
         line-height: 2rem;
         margin-bottom: 2rem;
     }
@@ -294,17 +301,20 @@ body {
         grid-column-end: 4;
         grid-row-start: 5;
         grid-row-end: 8;
+        position: relative;
     }
 
     .card-3 h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 1.5rem;
-        width: 12rem;
+        font-weight: 500;
+        width: 10rem;
     }
 
     .card-3 img {
+        position: absolute;
         width: 12rem;
-        translate: 0 50%;
+        bottom: -3.8rem;
     }
 
     .card-6 {
@@ -328,16 +338,22 @@ body {
         grid-row-start: 8;
         grid-row-end: 11;
         flex-direction: row;
+        position: relative;
     }
 
     .card-5 img {
+        position: absolute;
         /* width: 12rem; */
-        /* width: 40%; */
+        width: 40%;
+        left: 2rem;
+        top: 0.5rem;
     }
 
     .card-5 h3 {
-        font-size: 2.2rem;
-        width: 16rem;
+        position: absolute;
+        font-size: 2rem;
+        width: 50%;
+        right: 1rem;
         padding-left: 0.5rem;
         text-align: left;
     }
